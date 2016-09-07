@@ -1,0 +1,344 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://onlinedemo2.cybozu.info/scripts/garoon/grn.exe/cbpapi/workflow/api
+    body:
+      encoding: UTF-8
+      string: |
+        <?xml version="1.0" encoding="UTF-8"?>
+        <SOAP-ENV:Envelope xmlns:SOAP-ENV="http://www.w3.org/2003/05/soap-envelope"
+                           xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+                           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                           xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/"
+                           xmlns:base_services="http://wsdl.cybozu.co.jp/base/2008">
+          <SOAP-ENV:Header>
+            <Action SOAP-ENV:mustUnderstand="1"
+                    xmlns="http://schemas.xmlsoap.org/ws/2003/03/addressing">
+              WorkflowGetSentApplicationVersions
+            </Action>
+            <Security xmlns:wsu="http://schemas.xmlsoap.org/ws/2002/07/utility"
+                      SOAP-ENV:mustUnderstand="1"
+                      xmlns="http://schemas.xmlsoap.org/ws/2002/12/secext">
+              <UsernameToken wsu:Id="id">
+                <Username>sato</Username>
+                <Password>sato</Password>
+              </UsernameToken>
+            </Security>
+            <Timestamp SOAP-ENV:mustUnderstand="1" Id="id"
+                       xmlns="http://schemas.xmlsoap.org/ws/2002/07/utility">
+              <Created>2016-09-24T09:02:31-07:00</Created>
+              <Expires>2016-09-25T09:02:31-07:00</Expires>
+            </Timestamp>
+            <Locale>jp</Locale>
+          </SOAP-ENV:Header>
+          <SOAP-ENV:Body>
+            <WorkflowGetSentApplicationVersions>
+          <parameters start="2011-05-25T17:00:31Z">
+            <application_item id="33" version="1500000000"/>
+            <application_item id="32" version="1416375465"/>
+            <application_item id="31" version="1415179601"/>
+            <application_item id="21" version="1415185970"/>
+          </parameters>
+        </WorkflowGetSentApplicationVersions>
+          </SOAP-ENV:Body>
+        </SOAP-ENV:Envelope>
+    headers:
+      Accept:
+      - "*/*; q=0.5, application/xml"
+      Accept-Encoding:
+      - gzip, deflate
+      Content-Length:
+      - '1609'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 24 Sep 2016 16:02:32 GMT
+      Server:
+      - Apache
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Cybozu-Forward:
+      - '1'
+      X-Cybozu-User:
+      - '6'
+      Set-Cookie:
+      - CBSESSID=rl3nrdouedppq4lbc7mb6cbbs7jn4682; path=/; HttpOnly
+      - GRN_Account=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0; path=/scripts/garoon/;
+        httponly
+      Connection:
+      - close
+      Transfer-Encoding:
+      - chunked
+      Content-Type:
+      - application/soap+xml; charset="utf-8"
+    body:
+      encoding: UTF-8
+      string: |-
+        <?xml version="1.0" encoding="utf-8"?>
+        <soap:Envelope
+         xmlns:soap="http://www.w3.org/2003/05/soap-envelope"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+         xmlns:workflow="http://wsdl.cybozu.co.jp/workflow/2008">
+         <soap:Header><vendor>Cybozu</vendor><product>Garoon</product><product_type>1</product_type><version>4.2.3</version><apiversion>1.6.0</apiversion></soap:Header>
+         <soap:Body> <workflow:WorkflowGetSentApplicationVersionsResponse>
+         <returns>
+          <application_item id="21" version="1415185979" operation="modify" />
+          <application_item id="33" version="0" operation="remove" />
+          <application_item id="22" version="1306486534" operation="add" />
+          <application_item id="20" version="1306486544" operation="add" />
+          </returns>
+         </workflow:WorkflowGetSentApplicationVersionsResponse>
+         </soap:Body>
+        </soap:Envelope>
+    http_version: 
+  recorded_at: Sat, 24 Sep 2016 16:02:32 GMT
+- request:
+    method: post
+    uri: http://onlinedemo2.cybozu.info/scripts/garoon/grn.exe/cbpapi/workflow/api
+    body:
+      encoding: UTF-8
+      string: |
+        <?xml version="1.0" encoding="UTF-8"?>
+        <SOAP-ENV:Envelope xmlns:SOAP-ENV="http://www.w3.org/2003/05/soap-envelope"
+                           xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+                           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                           xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/"
+                           xmlns:base_services="http://wsdl.cybozu.co.jp/base/2008">
+          <SOAP-ENV:Header>
+            <Action SOAP-ENV:mustUnderstand="1"
+                    xmlns="http://schemas.xmlsoap.org/ws/2003/03/addressing">
+              WorkflowGetSentApplicationsById
+            </Action>
+            <Security xmlns:wsu="http://schemas.xmlsoap.org/ws/2002/07/utility"
+                      SOAP-ENV:mustUnderstand="1"
+                      xmlns="http://schemas.xmlsoap.org/ws/2002/12/secext">
+              <UsernameToken wsu:Id="id">
+                <Username>sato</Username>
+                <Password>sato</Password>
+              </UsernameToken>
+            </Security>
+            <Timestamp SOAP-ENV:mustUnderstand="1" Id="id"
+                       xmlns="http://schemas.xmlsoap.org/ws/2002/07/utility">
+              <Created>2016-09-24T09:02:32-07:00</Created>
+              <Expires>2016-09-25T09:02:32-07:00</Expires>
+            </Timestamp>
+            <Locale>jp</Locale>
+          </SOAP-ENV:Header>
+          <SOAP-ENV:Body>
+            <WorkflowGetSentApplicationsById>
+          <parameters>
+            <application_id>21</application_id>
+            <application_id>22</application_id>
+            <application_id>20</application_id>
+          </parameters>
+        </WorkflowGetSentApplicationsById>
+          </SOAP-ENV:Body>
+        </SOAP-ENV:Envelope>
+    headers:
+      Accept:
+      - "*/*; q=0.5, application/xml"
+      Accept-Encoding:
+      - gzip, deflate
+      Content-Length:
+      - '1479'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 24 Sep 2016 16:02:32 GMT
+      Server:
+      - Apache
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Cybozu-Forward:
+      - '1'
+      X-Cybozu-User:
+      - '6'
+      Set-Cookie:
+      - CBSESSID=te0au1c51srq8gsg7lvrcl1bp2qj4qsc; path=/; HttpOnly
+      - GRN_Account=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0; path=/scripts/garoon/;
+        httponly
+      Connection:
+      - close
+      Transfer-Encoding:
+      - chunked
+      Content-Type:
+      - application/soap+xml; charset="utf-8"
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHNvYXA6
+        RW52ZWxvcGUKIHhtbG5zOnNvYXA9Imh0dHA6Ly93d3cudzMub3JnLzIwMDMv
+        MDUvc29hcC1lbnZlbG9wZSIKIHhtbG5zOnhzaT0iaHR0cDovL3d3dy53My5v
+        cmcvMjAwMS9YTUxTY2hlbWEtaW5zdGFuY2UiCiB4bWxuczp4c2Q9Imh0dHA6
+        Ly93d3cudzMub3JnLzIwMDEvWE1MU2NoZW1hIgogeG1sbnM6d29ya2Zsb3c9
+        Imh0dHA6Ly93c2RsLmN5Ym96dS5jby5qcC93b3JrZmxvdy8yMDA4Ij4KIDxz
+        b2FwOkhlYWRlcj48dmVuZG9yPkN5Ym96dTwvdmVuZG9yPjxwcm9kdWN0Pkdh
+        cm9vbjwvcHJvZHVjdD48cHJvZHVjdF90eXBlPjE8L3Byb2R1Y3RfdHlwZT48
+        dmVyc2lvbj40LjIuMzwvdmVyc2lvbj48YXBpdmVyc2lvbj4xLjYuMDwvYXBp
+        dmVyc2lvbj48L3NvYXA6SGVhZGVyPgogPHNvYXA6Qm9keT48d29ya2Zsb3c6
+        V29ya2Zsb3dHZXRTZW50QXBwbGljYXRpb25zQnlJZFJlc3BvbnNlPgo8cmV0
+        dXJucz4KICA8YXBwbGljYXRpb24gaWQ9IjIyIiBuYW1lPSLkvY/miYDlpInm
+        m7TlsYrvvIjou6LlsYXjga7jgZ/jgoHjga7kvY/miYDlpInmm7TvvIkiIHBy
+        b2Nlc3Npbmdfc3RlcD0iMCIKIHN0YXR1cz0i5a6M5LqGIgogdXJnZW50PSJm
+        YWxzZSIgIHZlcnNpb249IjEzMDY0ODY1MzQiCiBudW1iZXI9IjIyIiBkYXRl
+        PSIyMDExLTA1LTI3VDA3OjExOjMyWiIgCiBzdGF0dXNfdHlwZT0iY29tcGxl
+        dGVkIj4KIAogPGFwcGxpY2FudCB4bWxucz0iaHR0cDovL3NjaGVtYXMuY3li
+        b3p1LmNvLmpwL3dvcmtmbG93LzIwMDgiIAogaWQ9IjYiCiBuYW1lPSLkvZDo
+        l6QmI3gyMDvmmIciPgogIDwvYXBwbGljYW50PgogPGl0ZW1zIHhtbG5zPSJo
+        dHRwOi8vc2NoZW1hcy5jeWJvenUuY28uanAvd29ya2Zsb3cvMjAwOCI+CiAg
+        ICA8aXRlbSBuYW1lPSLmqJnpoYwiCiB2YWx1ZT0i6Lui5bGF44Gu44Gf44KB
+        44Gu5L2P5omA5aSJ5pu0IgogcmlnaHRfYWxpZ249ImZhbHNlIiAvPgogICAg
+        ICA8aXRlbSBuYW1lPSLmiYDlsZ7ntYTnuZQiCiB2YWx1ZT0i5oOF5aCx44K3
+        44K544OG44Og6YOoIgogcmlnaHRfYWxpZ249ImZhbHNlIiAvPgogICAgICA8
+        aXRlbSBuYW1lPSLlpInmm7TvvIjkuojlrprvvInml6UiCiB2YWx1ZT0iMjAx
+        MeW5tCYjeDIwOzXmnIgmI3gyMDsyN+aXpSIKIHJpZ2h0X2FsaWduPSJmYWxz
+        ZSIgLz4KICAgICA8YmxhbmtfaXRlbSAvPgogICAgIDxpdGVtIG5hbWU9IuaX
+        p+S9j+aJgOiomOWFpeashOKRoCIKIHZhbHVlPSLpg7Xkvr/nlarlj7cmI3gy
+        MDsxMTItMDAxMyYjeDIwO+mbu+ipseeVquWPtyYjeDIwOzAzNTQwMjI1NTQi
+        CiByaWdodF9hbGlnbj0iZmFsc2UiIC8+CiAgICAgIDxpdGVtIG5hbWU9IuaX
+        p+S9j+aJgOiomOWFpeashOKRoSIKIHZhbHVlPSLkvY/miYAmI3gyMDvmnbHk
+        uqzpg73mlofkuqzljLoiCiByaWdodF9hbGlnbj0iZmFsc2UiIC8+CiAgICAg
+        IDxpdGVtIG5hbWU9IuaXp+S9j+aJgOWMuuWIhiIKIHZhbHVlPSLoh6rlt7Hm
+        iYDmnIkiCiByaWdodF9hbGlnbj0iZmFsc2UiIC8+CiAgICAgPGJsYW5rX2l0
+        ZW0gLz4KICAgICA8aXRlbSBuYW1lPSLmlrDkvY/miYDoqJjlhaXmrITikaAi
+        CiB2YWx1ZT0i6YO15L6/55Wq5Y+3JiN4MjA7MTEyLTAwMTMmI3gyMDvpm7vo
+        qbHnlarlj7cmI3gyMDswMzU0MDIyNTU0IgogcmlnaHRfYWxpZ249ImZhbHNl
+        IiAvPgogICAgICA8aXRlbSBuYW1lPSLmlrDkvY/miYDoqJjlhaXmrITikaEi
+        CiB2YWx1ZT0i5L2P5omAJiN4MjA75p2x5Lqs6YO95paH5Lqs5Yy6Igogcmln
+        aHRfYWxpZ249ImZhbHNlIiAvPgogICAgICA8aXRlbSBuYW1lPSLmlrDkvY/m
+        iYDljLrliIYiCiB2YWx1ZT0iIgogcmlnaHRfYWxpZ249ImZhbHNlIiAvPgog
+        ICAgIDxibGFua19pdGVtIC8+CiAgICAgPGl0ZW0gbmFtZT0i6YCj57Wh5LqL
+        6aCFIgogdmFsdWU9IiIKIHJpZ2h0X2FsaWduPSJmYWxzZSIgLz4KICAgIDwv
+        aXRlbXM+CiA8c3RlcHMgeG1sbnM9Imh0dHA6Ly9zY2hlbWFzLmN5Ym96dS5j
+        by5qcC93b3JrZmxvdy8yMDA4Ij4KICAgPHN0ZXAgaWQ9IjY2IiBuYW1lPSLp
+        g6jplbciCiAgdHlwZT0i5om/6KqN77yI5YWo5ZOh77yJIiBpc19hcHByb3Zh
+        bF9zdGVwPSIxIiAKICA+CiAgICA8cHJvY2Vzc29yIGlkPSI2IgogcHJvY2Vz
+        c29yX25hbWU9IuS9kOiXpCYjeDIwO+aYhyIKIHJlc3VsdD0i5om/6KqNIgog
+        ZGF0ZT0iMjAxMS0wNS0yN1QwODo1NTozNFoiICA+CiAgPC9wcm9jZXNzb3I+
+        CiAgIDwvc3RlcD4KICAgIDxzdGVwIGlkPSI2NyIgbmFtZT0i5Lq65LqLIgog
+        IAogdHlwZT0i5Zue6KanIiBpc19hcHByb3ZhbF9zdGVwPSIwIgogID4KICA8
+        cHJvY2Vzc29yIGlkPSIwIiBwcm9jZXNzb3JfbmFtZT0i77yI55yB55Wl77yJ
+        IiByZXN1bHQ9Ii0iIC8+CiAgPC9zdGVwPgogICA8L3N0ZXBzPgogCiAgICAg
+        PGZvbGRlciB4bWxucz0iaHR0cDovL3NjaGVtYXMuY3lib3p1LmNvLmpwL3dv
+        cmtmbG93LzIwMDgiIGlkPSI5IiAvPgogPGZvbGRlcl90eXBlPnJlY2VpdmVk
+        PC9mb2xkZXJfdHlwZT4KICA8Zm9sZGVyIHhtbG5zPSJodHRwOi8vc2NoZW1h
+        cy5jeWJvenUuY28uanAvd29ya2Zsb3cvMjAwOCIgaWQ9IjEwIiAvPgogPGZv
+        bGRlcl90eXBlPnNlbnQ8L2ZvbGRlcl90eXBlPgogIDxmb2xkZXIgeG1sbnM9
+        Imh0dHA6Ly9zY2hlbWFzLmN5Ym96dS5jby5qcC93b3JrZmxvdy8yMDA4IiBp
+        ZD0iMTEiIC8+CiA8Zm9sZGVyX3R5cGU+ZmluaXNoPC9mb2xkZXJfdHlwZT4K
+        ICA8L2FwcGxpY2F0aW9uPiAgPGFwcGxpY2F0aW9uIGlkPSIyMSIgbmFtZT0i
+        5LyR5pel5Ye65Yuk55Sz6KuL77yI5LyR5pel5Ye65Yuk55Sz6KuL77yJIiBw
+        cm9jZXNzaW5nX3N0ZXA9IjY1Igogc3RhdHVzPSLmib/oqo0iCiB1cmdlbnQ9
+        ImZhbHNlIiAgdmVyc2lvbj0iMTQxNTE4NTk3OSIKIG51bWJlcj0iMjEiIGRh
+        dGU9IjIwMTEtMDUtMjdUMDc6MTA6NDFaIiAKIHN0YXR1c190eXBlPSJhcHBy
+        b3ZlZCI+CiAKIDxhcHBsaWNhbnQgeG1sbnM9Imh0dHA6Ly9zY2hlbWFzLmN5
+        Ym96dS5jby5qcC93b3JrZmxvdy8yMDA4IiAKIGlkPSI2IgogbmFtZT0i5L2Q
+        6JekJiN4MjA75piHIj4KICA8L2FwcGxpY2FudD4KIDxpdGVtcyB4bWxucz0i
+        aHR0cDovL3NjaGVtYXMuY3lib3p1LmNvLmpwL3dvcmtmbG93LzIwMDgiPgog
+        ICAgPGl0ZW0gbmFtZT0i5qiZ6aGMIgogdmFsdWU9IuS8keaXpeWHuuWLpOeU
+        s+iriyIKIHJpZ2h0X2FsaWduPSJmYWxzZSIgLz4KICAgICAgPGl0ZW0gbmFt
+        ZT0i56S+5ZOh55Wq5Y+3IgogdmFsdWU9IjMxMTAzMzQiCiByaWdodF9hbGln
+        bj0iZmFsc2UiIC8+CiAgICAgIDxpdGVtIG5hbWU9IuaJgOWxnue1hOe5lCIK
+        IHZhbHVlPSLmg4XloLHjgrfjgrnjg4bjg6Dpg6giCiByaWdodF9hbGlnbj0i
+        ZmFsc2UiIC8+CiAgICAgIDxpdGVtIG5hbWU9IuS9nOalreaZgumWkyIKIHZh
+        bHVlPSIiCiByaWdodF9hbGlnbj0iZmFsc2UiIC8+CiAgICAgIDxpdGVtIG5h
+        bWU9IuaMr+abv+S8keaXpeS6iOWumuaXpSIKIHZhbHVlPSIyMDEx5bm0JiN4
+        MjA7NeaciCYjeDIwOzI35pelIgogcmlnaHRfYWxpZ249ImZhbHNlIiAvPgog
+        ICAgICA8aXRlbSBuYW1lPSLlgpnogIMiCiB2YWx1ZT0i44CQ5Ye65Yuk55CG
+        55Sx44O75L2c5qWt5qaC6KaB44CRIgogcmlnaHRfYWxpZ249ImZhbHNlIiAv
+        PgogICAgPC9pdGVtcz4KIDxzdGVwcyB4bWxucz0iaHR0cDovL3NjaGVtYXMu
+        Y3lib3p1LmNvLmpwL3dvcmtmbG93LzIwMDgiPgogICA8c3RlcCBpZD0iNjMi
+        IG5hbWU9IumDqOmVtyIKICB0eXBlPSLmib/oqo3vvIjlhajlk6HvvIkiIGlz
+        X2FwcHJvdmFsX3N0ZXA9IjEiIAogID4KICAgIDxwcm9jZXNzb3IgaWQ9IjYi
+        CiBwcm9jZXNzb3JfbmFtZT0i5L2Q6JekJiN4MjA75piHIgogcmVzdWx0PSLm
+        ib/oqo0iCiBkYXRlPSIyMDExLTA1LTI3VDA4OjU1OjQxWiIgID4KICA8L3By
+        b2Nlc3Nvcj4KICAgPC9zdGVwPgogICAgPHN0ZXAgaWQ9IjY0IiBuYW1lPSLn
+        tYzllrbnrqHnkIbpg6jplbciCiAgCiB0eXBlPSLlm57opqciIGlzX2FwcHJv
+        dmFsX3N0ZXA9IjAiCiAgPgogICAgPHByb2Nlc3NvciBpZD0iNiIKIHByb2Nl
+        c3Nvcl9uYW1lPSLkvZDol6QmI3gyMDvmmIciCiByZXN1bHQ9IueiuuiqjSIK
+        IGRhdGU9IjIwMTQtMTEtMDVUMTE6MTI6NTlaIiAgPgogIDwvcHJvY2Vzc29y
+        PgogICA8L3N0ZXA+CiAgICA8c3RlcCBpZD0iNjUiIG5hbWU9Iue1jOeQhuaL
+        heW9k+iAhSIKICAKIHR5cGU9IuWbnuimpyIgaXNfYXBwcm92YWxfc3RlcD0i
+        MCIKICA+CiAgICA8cHJvY2Vzc29yIGlkPSIzNyIKIHByb2Nlc3Nvcl9uYW1l
+        PSLmlonol6TjgIDlgaXlpKoiCiAKICAgPgogIDwvcHJvY2Vzc29yPgogICA8
+        cHJvY2Vzc29yIGlkPSI0MCIKIHByb2Nlc3Nvcl9uYW1lPSLlrq7mnKzjgIDn
+        p4DmqLkiCiAKICAgPgogIDwvcHJvY2Vzc29yPgogICA8cHJvY2Vzc29yIGlk
+        PSI0MyIKIHByb2Nlc3Nvcl9uYW1lPSLlsI/lt53jgIDlj4vntIAiCiAKICAg
+        PgogIDwvcHJvY2Vzc29yPgogICA8cHJvY2Vzc29yIGlkPSIxMyIKIHByb2Nl
+        c3Nvcl9uYW1lPSLliqDol6QmI3gyMDvnvo7lkrIiCiAKICAgPgogIDwvcHJv
+        Y2Vzc29yPgogICA8L3N0ZXA+CiAgIDwvc3RlcHM+CiAKICAgICA8Zm9sZGVy
+        IHhtbG5zPSJodHRwOi8vc2NoZW1hcy5jeWJvenUuY28uanAvd29ya2Zsb3cv
+        MjAwOCIgaWQ9IjkiIC8+CiA8Zm9sZGVyX3R5cGU+cmVjZWl2ZWQ8L2ZvbGRl
+        cl90eXBlPgogIDxmb2xkZXIgeG1sbnM9Imh0dHA6Ly9zY2hlbWFzLmN5Ym96
+        dS5jby5qcC93b3JrZmxvdy8yMDA4IiBpZD0iMTAiIC8+CiA8Zm9sZGVyX3R5
+        cGU+c2VudDwvZm9sZGVyX3R5cGU+CiAgPGZvbGRlciB4bWxucz0iaHR0cDov
+        L3NjaGVtYXMuY3lib3p1LmNvLmpwL3dvcmtmbG93LzIwMDgiIGlkPSIxMSIg
+        Lz4KIDxmb2xkZXJfdHlwZT5maW5pc2g8L2ZvbGRlcl90eXBlPgogIDwvYXBw
+        bGljYXRpb24+ICA8YXBwbGljYXRpb24gaWQ9IjIwIiBuYW1lPSLlm7Pmm7jo
+        s7zlhaXnlLPoq4vvvIhBbWF6b27lia/oqq3mnKzvvIkiIHByb2Nlc3Npbmdf
+        c3RlcD0iMCIKIHN0YXR1cz0i5a6M5LqGIgogdXJnZW50PSJmYWxzZSIgIHZl
+        cnNpb249IjEzMDY0ODY1NDQiCiBudW1iZXI9IjIwIiBkYXRlPSIyMDExLTA1
+        LTI3VDA3OjEwOjExWiIgCiBzdGF0dXNfdHlwZT0iY29tcGxldGVkIj4KIAog
+        PGFwcGxpY2FudCB4bWxucz0iaHR0cDovL3NjaGVtYXMuY3lib3p1LmNvLmpw
+        L3dvcmtmbG93LzIwMDgiIAogaWQ9IjYiCiBuYW1lPSLkvZDol6QmI3gyMDvm
+        mIciPgogIDwvYXBwbGljYW50PgogPGl0ZW1zIHhtbG5zPSJodHRwOi8vc2No
+        ZW1hcy5jeWJvenUuY28uanAvd29ya2Zsb3cvMjAwOCI+CiAgICA8aXRlbSBu
+        YW1lPSLmqJnpoYwiCiB2YWx1ZT0iQW1hem9u5Ymv6Kqt5pysIgogcmlnaHRf
+        YWxpZ249ImZhbHNlIiAvPgogICAgICA8aXRlbSBuYW1lPSLilqDvvJHvvI4i
+        CiB2YWx1ZT0i77yI5pu457GN5ZCN77yJ77yI5Ye654mI56S+5ZCN77yJJiN4
+        MjA75YaKJiN4MjA7JiN4MjA7w5cmI3gyMDsmI3gyMDvlhoYmI3gyMDswJiN4
+        MjA75YaGIgogcmlnaHRfYWxpZ249ImZhbHNlIiAvPgogICAgICA8aXRlbSBu
+        YW1lPSLilqDvvJLvvI4iCiB2YWx1ZT0i5YaKJiN4MjA7JiN4MjA7w5cmI3gy
+        MDsmI3gyMDvlhoYmI3gyMDswJiN4MjA75YaGIgogcmlnaHRfYWxpZ249ImZh
+        bHNlIiAvPgogICAgICA8aXRlbSBuYW1lPSLilqDvvJPvvI4iCiB2YWx1ZT0i
+        5YaKJiN4MjA7JiN4MjA7w5cmI3gyMDsmI3gyMDvlhoYmI3gyMDswJiN4MjA7
+        5YaGIgogcmlnaHRfYWxpZ249ImZhbHNlIiAvPgogICAgICA8aXRlbSBuYW1l
+        PSLilqDvvJTvvI4iCiB2YWx1ZT0i5YaKJiN4MjA7JiN4MjA7w5cmI3gyMDsm
+        I3gyMDvlhoYmI3gyMDswJiN4MjA75YaGIgogcmlnaHRfYWxpZ249ImZhbHNl
+        IiAvPgogICAgICA8aXRlbSBuYW1lPSLilqDvvJXvvI4iCiB2YWx1ZT0i5YaK
+        JiN4MjA7JiN4MjA7w5cmI3gyMDsmI3gyMDvlhoYmI3gyMDswJiN4MjA75YaG
+        IgogcmlnaHRfYWxpZ249ImZhbHNlIiAvPgogICAgICA8aXRlbSBuYW1lPSLl
+        kIjoqIjph5HpoY0iCiB2YWx1ZT0iMCYjeDIwO+WGhiIKIHJpZ2h0X2FsaWdu
+        PSJ0cnVlIiAvPgogICAgICA8aXRlbSBuYW1lPSLntI3lk4HluIzmnJvml6Ui
+        CiB2YWx1ZT0iMjAxMeW5tCYjeDIwOzXmnIgmI3gyMDsyN+aXpSIKIHJpZ2h0
+        X2FsaWduPSJmYWxzZSIgLz4KICAgICAgPGl0ZW0gbmFtZT0i55uu55qEIgog
+        dmFsdWU9IiIKIHJpZ2h0X2FsaWduPSJmYWxzZSIgLz4KICAgIDwvaXRlbXM+
+        CiA8c3RlcHMgeG1sbnM9Imh0dHA6Ly9zY2hlbWFzLmN5Ym96dS5jby5qcC93
+        b3JrZmxvdy8yMDA4Ij4KICAgPHN0ZXAgaWQ9IjYxIiBuYW1lPSLjg6rjg7zj
+        g4Djg7wiCiAgdHlwZT0i5om/6KqN77yI5YWo5ZOh77yJIiBpc19hcHByb3Zh
+        bF9zdGVwPSIxIiAKICA+CiAgPHByb2Nlc3NvciBpZD0iMCIgcHJvY2Vzc29y
+        X25hbWU9Iu+8iOecgeeVpe+8iSIgcmVzdWx0PSItIiAvPgogIDwvc3RlcD4K
+        ICAgIDxzdGVwIGlkPSI2MiIgbmFtZT0i6YOo6ZW3IgogIHR5cGU9IuaJv+iq
+        je+8iOWFqOWToe+8iSIgaXNfYXBwcm92YWxfc3RlcD0iMSIgCiAgPgogICAg
+        PHByb2Nlc3NvciBpZD0iNiIKIHByb2Nlc3Nvcl9uYW1lPSLkvZDol6QmI3gy
+        MDvmmIciCiByZXN1bHQ9IuaJv+iqjSIKIGRhdGU9IjIwMTEtMDUtMjdUMDg6
+        NTU6NDRaIiAgPgogIDwvcHJvY2Vzc29yPgogICA8L3N0ZXA+CiAgIDwvc3Rl
+        cHM+CiAKICAgICA8Zm9sZGVyIHhtbG5zPSJodHRwOi8vc2NoZW1hcy5jeWJv
+        enUuY28uanAvd29ya2Zsb3cvMjAwOCIgaWQ9IjkiIC8+CiA8Zm9sZGVyX3R5
+        cGU+cmVjZWl2ZWQ8L2ZvbGRlcl90eXBlPgogIDxmb2xkZXIgeG1sbnM9Imh0
+        dHA6Ly9zY2hlbWFzLmN5Ym96dS5jby5qcC93b3JrZmxvdy8yMDA4IiBpZD0i
+        MTAiIC8+CiA8Zm9sZGVyX3R5cGU+c2VudDwvZm9sZGVyX3R5cGU+CiAgPGZv
+        bGRlciB4bWxucz0iaHR0cDovL3NjaGVtYXMuY3lib3p1LmNvLmpwL3dvcmtm
+        bG93LzIwMDgiIGlkPSIxMSIgLz4KIDxmb2xkZXJfdHlwZT5maW5pc2g8L2Zv
+        bGRlcl90eXBlPgogIDwvYXBwbGljYXRpb24+IDwvcmV0dXJucz4KIDwvd29y
+        a2Zsb3c6V29ya2Zsb3dHZXRTZW50QXBwbGljYXRpb25zQnlJZFJlc3BvbnNl
+        PgogPC9zb2FwOkJvZHk+Cjwvc29hcDpFbnZlbG9wZT4=
+    http_version: 
+  recorded_at: Sat, 24 Sep 2016 16:02:32 GMT
+recorded_with: VCR 2.9.2
