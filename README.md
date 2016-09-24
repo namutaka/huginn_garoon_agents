@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/namutaka/huginn_garoon_agents.svg?branch=master)](https://travis-ci.org/namutaka/huginn_garoon_agents)
+
 # HuginnGaroonAgents
 
 Welcome to your new agent gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/huginn_garoon_agents`. To experiment with that code, run `bin/console` for an interactive prompt.
